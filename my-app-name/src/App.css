@@ -39,4 +39,19 @@ iframe {
   border-radius: 8px;  /* Optional: Add rounded corners to the player */
 }
 
+.left-aligned {
+  float: left;
+  margin-right: 10%;
+  width: 30%;
+  height: 30%;
+  padding-top: 8%;
+}
+
+.personalityStat {
+  padding-top: 8%;
+  padding-left: 30%;
+  width: 60%;
+}
+
+
 

@@ -2,6 +2,8 @@ import { useState } from 'react'
 import './App.css'
 import FlipCard from './FlipCards'
 import Podcast from './Podcast';
+import ImageCarousel from './slideshow'; 
+
 
 function App() {
 
@@ -42,13 +44,37 @@ function App() {
       but also in general current events as well such as the coronavirus. 23% of U.S. adults who get their political news from social media and 32% of
       adults who get their political news from local TV were following what was happening during the COVID-19 pandemic compared to other groups such as 
       news websites and apps where 44% of U.S. adults were following what was happening. This suppots Neil Postman's idea that a society's dominant medium 
-      for expression influence how that society thinks as the lack of interactiveness and the short-form content that comes with social media or watching TV 
-      leads to less care to learn more about current events.
+      for expression influence how that society thinks as the short-form content that comes with social media or watching TV 
+      leads to less care to learn more about current events because it doesn't allow for much context nor require engagement.
       </p>
+
       <div className="Podcast">
       <Podcast />
       </div>
+      
+      <img src ="/YouTubePersonalityStat.jpg" alt="YouTube Personality Stat" className="left-aligned"/>
+      <p className="personalityStat">
+      The biggest reason why people use YouTube, one of the biggest social media platforms, as a source for news was because of how they seek opinions from other people.
+      A pew research study states, "Indeed, YouTube news viewers are about as likely to say they are primarily looking for opinions and commentary on the website (51%) as 
+      they are to say they are mostly seeking information and facts (i.e., “straight” reporting; 48%).” This supports Postman's idea about how the medium affects the message 
+      as he believes that "intellectual" and "serious" activities are taken over by the need for entertainment as people are using YouTube to be entertained through commentary
+      on different current events. This is further shown by the fact that certain opinions will gain more viewership than others. The same study states,“Negativity also seemed 
+      to drive viewership – or, on the other side of the coin, positivity was less effective at capturing an audience’s attention. Videos that were predominantly 
+      negative in tone received an average of 184,000 views, somewhat higher than videos that had a mixed or neutral tone, which averaged 172,000 views. On the other hand, videos with a 
+      positive tone received notably fewer views, with 117,000, on average. This pattern was reflected in videos that were produced by both types of channels – news organizations and 
+      independent channels alike.” This indicates that YouTube consumers are looking for videos with a high amount of emotion, and negative videos evoke a lot of emotion which could 
+      entertain the consumer. Emotions in a video about politics cause a person to lean towards or away from a certain opinion, and there is a lack of discourse due to how the consumer
+      isn't able to argue with a video which leads to forming opinions without logically thinking about it.
+      </p>
 
+      <div>
+        <h1>My Image Carousel</h1>
+        <ImageCarousel />
+      </div>
+
+
+
+      
     </div>
   );
 }

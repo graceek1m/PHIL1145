@@ -1,0 +1,32 @@
+.ImageCarousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .carousel img {
+    width: 300px;
+    height: auto;
+    margin: 0 10px;
+  }
+  
+  button {
+    position: absolute;
+    background: transparent;
+    border: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  button.prev {
+    left: 30%;
+  }
+  
+  button.next {
+    right: 30%;
+  }
+  
+  
