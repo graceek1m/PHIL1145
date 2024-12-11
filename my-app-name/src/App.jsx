@@ -1,35 +1,30 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import FlipCard from './FlipCards'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className="App">
+      <h1>Medium in the Message</h1>
+      <h3>How the type of media a person consumes affects how they view current events</h3>
+      <div className="card-container">
+        <FlipCard 
+          imageSrc="https://www.pewresearch.org/wp-content/uploads/sites/20/2024/02/SR_24.02.07_social-media-news_1.png" 
+          backContent="Back Content 1" 
+        />
+        <FlipCard 
+          imageSrc="https://www.pewresearch.org/wp-content/uploads/sites/20/2024/02/SR_24.02.07_social-media-news_2.png" 
+          backContent="Back Content 2" 
+        />
+        <FlipCard 
+          imageSrc="https://www.pewresearch.org/wp-content/uploads/sites/20/2024/02/SR_24.02.07_social-media-news_3.png" 
+          backContent="Back Content 3" 
+        />
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    </div>
+  );
 }
 
-export default App
+export default App;
