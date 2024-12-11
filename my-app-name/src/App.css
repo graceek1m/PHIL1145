@@ -1,5 +1,5 @@
 #root {
-  max-width: 1280px;
+  width: 100%;
   margin: 0 auto;
   padding: 4rem;
   text-align: center;
@@ -21,11 +21,13 @@
 }
 
 .card-container {
+  margin-top: 8%;
   display: flex; 
   flex-wrap: wrap;
   justify-content: center; 
   gap: 20px; 
   padding: 20px;
+  margin-bottom: 8%;
 }
 
 @media (max-width: 600px) {
@@ -35,27 +37,41 @@
   }
 }
 
+.top {
+  margin-bottom: 8%;
+}
+
 iframe {
-  margin-top: 20px;
-  border-radius: 8px;  /* Optional: Add rounded corners to the player */
+  margin-top: 2%;
+  border-radius: 8px;  
 }
 
 .left-aligned {
   float: left;
   margin-right: 10%;
   width: 30%;
-  height: 30%;
   padding-top: 8%;
+  padding-left: 4%;
 }
 
 .personalityStat {
   padding-top: 8%;
-  padding-left: 30%;
+  padding-left: 40%;
   width: 60%;
+  margin-bottom: 20%;
 }
 
+.personality {
+  padding-top: 8%;
+  height: 25%;
+}
 .carouselTitle{
   padding-top: 8%;
+}
+.caurosel {
+  display: flex;
+  align-items: center;
+  justify-content: center;   
 }
 
 br {
@@ -71,6 +87,7 @@ h3 {
 
 .sources {
   font-family: 'Times New Roman', Times, serif;
+  margin-top: 10%
 }
 
 .title{

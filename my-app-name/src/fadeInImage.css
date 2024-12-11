@@ -1,0 +1,44 @@
+.conspiracy {
+    position: relative;
+    margin-top: 15%;
+    margin-bottom: 5%;
+  }
+  
+  .conspiracyImage {
+    width: 50%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #CAC9BA;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 1s ease-in-out;
+    width: 50%;
+    left: 25%;
+  }
+  
+  .conspiracy:hover .overlay {
+    opacity: 1;
+  }
+  
+  .conspiracyText {
+    color: rgb(95, 53, 53);
+    font-size: 22px;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    padding: 2%;
+    font-family: 'Segoe UI', Tahoma, Geneva, sans-serif;
+  }
+  
+  .conspiracy:hover .conspiracyText {
+    opacity: 1;
+  }
+  

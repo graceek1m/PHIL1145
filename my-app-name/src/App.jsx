@@ -3,6 +3,7 @@ import './App.css'
 import FlipCard from './FlipCards'
 import Podcast from './Podcast';
 import ImageCarousel from './slideshow'; 
+import ConspiracyCard from './fadeInImage'; 
 
 
 function App() {
@@ -18,7 +19,9 @@ function App() {
       <div className="card-container">
         <FlipCard 
           imageSrc="https://www.pewresearch.org/wp-content/uploads/sites/20/2024/02/SR_24.02.07_social-media-news_1.png" 
-          backContent="Back Content 1" 
+          backContent="The appeal with people consuming news through social media is the convenience of it being avaliable on their phones along with how fast they're able to
+          consume content. These factors promote the idea of people consuming only surface-level news because it's the easiest way of being aware of current events even if 
+          it means that they do not get the full context." 
         />
         <FlipCard 
           imageSrc="https://www.pewresearch.org/wp-content/uploads/sites/20/2024/02/SR_24.02.07_social-media-news_2.png" 
@@ -34,7 +37,7 @@ function App() {
         />
       </div>
 
-      <p>
+      <p className = "top">
       A Pew Research study found that people who are less likely to be aware of political events such as the 2020 election are people who
       use social media and local TV as their primary sources of political news. The study states, "The only group with a level of engagement 
       that is similarly low is U.S. adults who get their political news primarily from local television, 11% of whom are following election news 
@@ -52,6 +55,7 @@ function App() {
       <Podcast />
       </div>
       
+      <div class = "personality">
       <img src ="/YouTubePersonalityStat.jpg" alt="YouTube Personality Stat" className="left-aligned"/>
       <p className="personalityStat">
       The biggest reason why people use YouTube, one of the biggest social media platforms, as a source for news was because of how they seek opinions from other people.
@@ -64,25 +68,29 @@ function App() {
       positive tone received notably fewer views, with 117,000, on average. This pattern was reflected in videos that were produced by both types of channels – news organizations and 
       independent channels alike.” This indicates that YouTube consumers are looking for videos with a high amount of emotion, and negative videos evoke a lot of emotion which could 
       entertain the consumer. Emotions in a video about politics cause a person to lean towards or away from a certain opinion, and there is a lack of discourse due to how the consumer
-      isn't able to argue with a video which leads to forming opinions without logically thinking about it.
+      isn't able to argue with a video which leads to forming opinions without logically thinking about it. Although a comment section exists on YouTube, there is not a guarantee that
+      there is going to be a direct response from the person who created the video, especially as a video becomes more popular and there are more comments on the video.
       </p>
+      </div>
+  
 
-      <div>
+      <div class = "carousel">
         <h2 className = "carouselTitle">Statistics on YouTube News Videos</h2>
         <ImageCarousel />
       </div>
+
+      <ConspiracyCard />
 
       <div className ="sources">
         <h2>Sources</h2>
         <p>
         Wang, Luxuan, and Naomi Forman-Katz. “Many Americans Find Value in Getting News on Social Media, but Concerns about Inaccuracy Have Risen.” 
-        ew Research Center, 7 Feb. 2024, www.pewresearch.org/short-reads/2024/02/07/many-americans-find-value-in-getting-news-on-social-media-but-concerns-about-inaccuracy-have-risen/. <br />
+        Pew Research Center, 7 Feb. 2024, www.pewresearch.org/short-reads/2024/02/07/many-americans-find-value-in-getting-news-on-social-media-but-concerns-about-inaccuracy-have-risen/.<br />
         Stocking, Galen, et al. “Many Americans Get News on YouTube, Where News Organizations and Independent Producers Thrive Side by Side.” Pew Research Center’s Journalism Project, 
         28 Sept. 2020, www.pewresearch.org/journalism/2020/09/28/many-americans-get-news-on-youtube-where-news-organizations-and-independent-producers-thrive-side-by-side/. <br />
         “Social Media: Friend or Foe to the News Cycle? - News Literacy Initiative.” Psu.edu, 2016, newsliteracy.psu.edu/podcasts/episode-105-social-media-friend-or-foe-to-the-news-cycle. <br /> 
         Mitchell, Amy, et al. “Americans Who Mainly Get Their News on Social Media Are Less Engaged, Less Knowledgeable.” Pew Research Center’s Journalism Project, 
         Pew Research Center, 30 July 2020, www.pewresearch.org/journalism/2020/07/30/americans-who-mainly-get-their-news-on-social-media-are-less-engaged-less-knowledgeable/. 
-
         </p>
       </div>
     </div>
