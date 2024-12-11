@@ -9,7 +9,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Medium in the Message</h1>
+      <h1 className = "title">Medium in the Message</h1>
       <h3>How the type of media a person consumes affects how they view current events</h3>
       <p> Thesis: More modern mediums such as TV and social media are more commonly used, 
         but go less in-depth than traditional mediums such as the news, leading to more surface-level discourse.
@@ -72,6 +72,19 @@ function App() {
         <ImageCarousel />
       </div>
 
+      <div className ="sources">
+        <h2>Sources</h2>
+        <p>
+        Wang, Luxuan, and Naomi Forman-Katz. “Many Americans Find Value in Getting News on Social Media, but Concerns about Inaccuracy Have Risen.” 
+        ew Research Center, 7 Feb. 2024, www.pewresearch.org/short-reads/2024/02/07/many-americans-find-value-in-getting-news-on-social-media-but-concerns-about-inaccuracy-have-risen/. <br />
+        Stocking, Galen, et al. “Many Americans Get News on YouTube, Where News Organizations and Independent Producers Thrive Side by Side.” Pew Research Center’s Journalism Project, 
+        28 Sept. 2020, www.pewresearch.org/journalism/2020/09/28/many-americans-get-news-on-youtube-where-news-organizations-and-independent-producers-thrive-side-by-side/. <br />
+        “Social Media: Friend or Foe to the News Cycle? - News Literacy Initiative.” Psu.edu, 2016, newsliteracy.psu.edu/podcasts/episode-105-social-media-friend-or-foe-to-the-news-cycle. <br /> 
+        Mitchell, Amy, et al. “Americans Who Mainly Get Their News on Social Media Are Less Engaged, Less Knowledgeable.” Pew Research Center’s Journalism Project, 
+        Pew Research Center, 30 July 2020, www.pewresearch.org/journalism/2020/07/30/americans-who-mainly-get-their-news-on-social-media-are-less-engaged-less-knowledgeable/. 
+
+        </p>
+      </div>
     </div>
   );
 }
