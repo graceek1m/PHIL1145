@@ -68,13 +68,10 @@ function App() {
       </p>
 
       <div>
-        <h1>My Image Carousel</h1>
+        <h2 className = "carouselTitle">Statistics on YouTube News Videos</h2>
         <ImageCarousel />
       </div>
 
-
-
-      
     </div>
   );
 }
