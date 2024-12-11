@@ -39,13 +39,12 @@
   }
   
   .flip-card-back {
-    background-color: #D1DDE0;
+    background-color: #90A0A3;
     transform: rotateY(180deg);
-    font-size: 14px; 
+    font-size: 16px; 
     text-align: center; 
     word-wrap: break-word; 
     white-space: normal;
-    color: #FFFFFF;
   }
 
   .flip-card-image {
